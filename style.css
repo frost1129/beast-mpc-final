@@ -357,4 +357,20 @@ body {
         background-color: var(--grey);
         color: var(--white);
     }
+
+    /* ========== SECTIONS ========== */
+    .detail-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-container .detail {
+        margin-bottom: 20px;
+        max-width: 90%;
+        padding: 0 30px;
+    }
+
+    .detail-container .detail h2 {
+        text-align: left;
+    }
 }
