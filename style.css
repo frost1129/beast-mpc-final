@@ -283,6 +283,42 @@ body {
     font-size: 15px;
 }
 
+/* ========== Footer ========== */
+.footer {
+    padding: 20px 0px;
+}
+
+.footer .social-media {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.footer .social-media i {
+    background-color: var(--purple);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: var(--white);
+    font-size: 1.2rem;
+    margin: 10px;
+
+    transition: transform 0.7s ease-out;
+    cursor: pointer;
+}
+
+.footer .social-media i:hover {
+    transform: scale(1.2);
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--purple);
+    user-select: none;
+}
+
 /* ========== Responsive ========== */
 @media screen and (max-width: 1200px) {
 
