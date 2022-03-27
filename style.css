@@ -32,6 +32,15 @@ body {
     align-items: center;
     font-weight: bold;
     color: var(--black);
+    transition: all linear .7s;
+    
+    z-index: 99;
+}
+
+.header.sticky-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .logo {
@@ -148,13 +157,27 @@ body {
 /* ========== Hero section ========== */
 .hero-section {
     min-height: 60vh;
-    background: linear-gradient(0deg, #eeeeeecc, #5c88aecc), url(https://images.unsplash.com/photo-1488376739361-ed24c9beb6d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80) no-repeat;
+    background: linear-gradient(0deg, #000000cc, #5c88aecc), url(https://images.unsplash.com/photo-1488376739361-ed24c9beb6d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--white);
 }
 
+.branding {
+    font-size: 3rem;
+    margin: 0;
+}
 
+.des {
+    font-size: .9rem;
+    margin: 30px;
+}
+
+.btn-action {
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
 
