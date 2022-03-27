@@ -8,7 +8,16 @@ $(document).ready(function() {
         }
     })
 
-    
+    // responsive hamburger menu
+    $(".hamburger").click(function() {
+        if ($(this).hasClass("is-active")) {
+            $(this).removeClass("is-active");
+            $(".mobile-nav").removeClass("is-active");
+        } else {
+            $(this).addClass("is-active");
+            $(".mobile-nav").addClass("is-active");
+        }
+    })
 
     // scroll-bar
     $(".progress .progress-value p").text("0%");
