@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beast Player</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="music_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">BEAST</div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="app-demo.html">Demo</a></li>
+            </ul>
+        </div>
+        <button class="btn btn-nav">Download</button>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav class="mobile-nav">
+        <a class="btn-mobile" href="index.html">Home</a>
+        <a class="btn-mobile" href="app-demo.html">Demo</a>
+        <a class="btn-mobile" href="#">Download</a>
+    </nav>
+
+
+    <div class="wrapper">
+        <!-- header bar -->
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+
+        <!-- main content -->
+        <div class="img-area">
+            <img src="" alt="This is a picture">
+        </div>
+
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-bar">
+                
+            </div>
+            <audio id="main-audio" src=""></audio>
+            <div class="timer">
+                <span class="current">0:05</span>
+                <span class="duration"></span>
+            </div>
+        </div> 
+        
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+
+            <div class="play-pause">
+                <i id="play" class="material-icons">play_arrow</i>
+            </div>
+
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+
+            <ul>
+                
+            </ul>
+
+        </div>
+
+    <!-- SCROLL-BAR -->
+    <!-- <div class="progress">
+        <span class="progress-value">
+            <p></p>
+        </span>
+    </div> -->
+
+    <div class="footer">
+
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="music_list.js"></script>
+    <script src="music_script.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
-    --purple: #AA14F0;
+    --purple: #8c6cff;
     --white: #EAF2FA;
     --black: #000000;
     --grey: #5C88AE;
@@ -19,6 +19,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* ========== Header ========== */
@@ -26,13 +29,14 @@ body {
     display: flex;
     flex-direction: row;
     background-color: var(--white);
-    height: 80px;
+    min-height: 80px;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
     font-weight: bold;
     color: var(--black);
     transition: all linear .7s;
+    
     
     z-index: 99;
 }
@@ -241,7 +245,7 @@ body {
 
     .header {
         justify-content: space-between;
-        padding: 40px;
+        padding: 0 40px;
     }
 
     .hamburger {
