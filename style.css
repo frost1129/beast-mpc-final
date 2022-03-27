@@ -200,6 +200,7 @@ body {
     display: grid;
     place-items: center;
     z-index: 90;
+    opacity: .5;
 }
 
 .progress-value {
