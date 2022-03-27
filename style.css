@@ -4,7 +4,7 @@
     --purple: #8c6cff;
     --white: #EAF2FA;
     --black: #000000;
-    --grey: #5C88AE;
+    --grey: #6894bb;
 }
 
 * {
@@ -149,9 +149,19 @@ body {
     display: none;
 }
 
+/* ========== Main content ========== */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ========== Hero section ========== */
 .hero-section {
     min-height: 80vh;
+    width: 100%;
     background: linear-gradient(0deg, #000000cc, #5c88aecc), url(https://images.unsplash.com/photo-1488376739361-ed24c9beb6d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80) no-repeat;
     background-size: cover;
     display: flex;
@@ -191,6 +201,45 @@ body {
     color: var(--white);
 }
 
+/* ========== SECTIONS ========== */
+.section {
+    max-width: 1000px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.section .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detail-container .detail {
+    background-color: var(--grey);
+    border-radius: 15px;
+    max-width: 250px;
+    padding: 0 10px;
+    box-shadow: 5px 5px 20px #1d1d1d85;
+    user-select: none;
+    transition: all ease .7s;
+}
+
+.detail-container .detail:hover {
+    transform: scale(1.1);
+}
+
+.detail-container .detail h2 {
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
+}
 
 /* ========== Scroll ========== */
 ::-webkit-scrollbar {
