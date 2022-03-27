@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --purple: #AA14F0;
+    --white: #EAF2FA;
+    --black: #000000;
+    --grey: #5C88AE;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+/* ========== Header ========== */
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    height: 80px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.logo {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    color: var(--grey);
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.nav ul li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.nav ul li {
+    position: relative;
+}
+
+.nav ul li:after {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    max-width: 80%;
+    width: 0;
+    height: 3px;
+    left: 10%;
+    bottom: -15%;
+    background-color: var(--grey);
+    transition: all .7s ease;
+}
+.nav ul li:hover:after {
+    width: 100%;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    transition: color linear .3s;
+}
+.nav ul li a:hover {
+    color: var(--grey);
+}
+
+.btn {
+    font-weight: bold;
+    padding: .2rem .6rem;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--purple);
+    color: var(--white);
+    transition: opacity ease .7s;
+}
+.btn:hover {
+    opacity: .8;
+}
+
+/* ========== Hamburger menu ========== */
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    
+    user-select: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 99;
+    border: none;
+}
+.hamburger:hover {
+    background: none;
+}
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background-color: var(--grey);
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.5s;
+}
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: var(--purple);
+}
+
+.hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+.hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+.hamburger.is-active span:nth-child(2) {
+    transform: translateX(15px);
+    opacity: 0;
+}
+
+.hamburger.is-active:hover span {
+    background-color: var(--purple);
+}
+
+.hamburger {
+    display: none;
+}
+
+/* ========== Hero section ========== */
+.hero-section {
+    min-height: 60vh;
+    background: linear-gradient(0deg, #eeeeeecc, #5c88aecc), url(https://images.unsplash.com/photo-1488376739361-ed24c9beb6d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
